@@ -1,8 +1,16 @@
 # CST8919 - Lab 4 - Azure Key Vault Exploration
 Donna Ha - 041174159
 
+## Prerequisites
+- Python
+- Azure CLI
+- Azure Account (Key Vault)
+
+This program assumes you already have a Key Vault created with correct access permissions given to your Azure account.
+
 ## Information on code
-This code template is based on Microsoft Learn's quick start article: ["Quickstart: Azure Key Vault secret client library for Python"](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python?tabs=azure-cli).
+This code template is based on Microsoft Learn's quick start article: <br/> ["Quickstart: Azure Key Vault secret client library for Python"](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python?tabs=azure-cli).
+
 
 ### Environment Variable
 The code uses an environment variable that is set using the following command:
@@ -16,6 +24,15 @@ Command Prompt
 ```
 set KEY_VAULT_NAME=<your-unique-keyvault-name>
 ```
+
+### To Run This Simple Application
+1. Clone/Download this repository
+2. Set your environment variable for the KEY_VAULT_NAME
+3. Log in to Azure CLI
+4. Change into this directory, and run 
+    ```
+    python add-secret.py 
+    ```
 
 ### Authentication
 The article shows us how to authenticate using DefaultAzureCredential, which would potentially need more environment variables for AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET. 
